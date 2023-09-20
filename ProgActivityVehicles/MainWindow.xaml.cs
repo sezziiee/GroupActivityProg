@@ -28,6 +28,7 @@ namespace ProgActivityVehicles
             InitializeComponent();
         }
         List<Vehicle> vehicles = new List<Vehicle>();
+        Vehicle vehicle = new Vehicle();
         private void button_Click(object sender, RoutedEventArgs e)
         {
             
@@ -52,7 +53,8 @@ namespace ProgActivityVehicles
 
                 count++;
             }
-            
+            vehicle.ServiceMessage = vehicle.CalculateRemaining();
+            lblMessage.Content = vehicle.CalculateRemaining();
         }
 
         private void btnDisplay_Click(object sender, RoutedEventArgs e)

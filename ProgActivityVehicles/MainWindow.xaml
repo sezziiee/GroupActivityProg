@@ -21,6 +21,7 @@
         <Button x:Name="btnDisplay" Click="btnDisplay_Click" Content="Display" HorizontalAlignment="Left" Margin="177,217,0,0" VerticalAlignment="Top" Height="26" Width="72"/>
         <DataGrid x:Name="dgvVehicle" Height="NaN" Margin="41,262,36,10" Width="NaN"/>
         <Label x:Name="lblServiceMessage" Content="Service Status:" HorizontalAlignment="Left" Margin="41,150,0,0" VerticalAlignment="Top" Width="85" Height="24"/>
+        <Label x:Name="lblMessage" Content="" HorizontalAlignment="Left" Margin="131,156,0,0" VerticalAlignment="Top" Width="122"/>
 
     </Grid>
 </Window>
