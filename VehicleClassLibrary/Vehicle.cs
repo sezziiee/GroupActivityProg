@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace VehicleClassLibrary
 {
@@ -13,7 +14,6 @@ namespace VehicleClassLibrary
         public string vehicleMake { get; set; }
         public int numKM { get; set; }
         public int serviceKM { get; set; }
-        public string ServiceMessage { get; set; }
 
         public string AddVehicle()
         {
@@ -23,20 +23,18 @@ namespace VehicleClassLibrary
         {
             return vehicleID + "\t" + Description + "\t" + vehicleMake + "\t" + numKM + "\t" + serviceKM;
         }
-        public string CalculateRemaining()
+        public void CalculateRemaining()
         {
-            string result = "";
             int remaining = 0;
             remaining = serviceKM - numKM;
             if (remaining <= 3000)
             {
-                result = "Remaining Kilometers: " + remaining;
+                MessageBox.Show("Remaining Kilometers: " + remaining);
             }
             else if (remaining > 3000)
             {
-                result = "No Sevice Needed! ";
+                MessageBox.Show("No Sevice Needed! ");
             }
-            return result;
         }
     }
 

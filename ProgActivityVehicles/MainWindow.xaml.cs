@@ -58,8 +58,6 @@ namespace ProgActivityVehicles
 
                 count++;
             }
-            vehicle.ServiceMessage = vehicle.CalculateRemaining();
-            lblMessage.Content = vehicle.CalculateRemaining();
         }
 
         private void btnDisplay_Click(object sender, RoutedEventArgs e)
