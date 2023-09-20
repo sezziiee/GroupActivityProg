@@ -27,8 +27,13 @@ namespace ProgActivityVehicles
         {
             InitializeComponent();
         }
+
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+
         List<Vehicle> vehicles = new List<Vehicle>();
         private void button_Click(object sender, RoutedEventArgs e)
+
         {
             
 
