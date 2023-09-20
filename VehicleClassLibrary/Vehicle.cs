@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace VehicleClassLibrary
 {
@@ -22,6 +23,8 @@ namespace VehicleClassLibrary
         {
             return vehicleID + "\t" + Description + "\t" + vehicleMake + "\t" + numKM + "\t" + serviceKM;
         }
+
+        MessageBox.Show();
     }
 
     
