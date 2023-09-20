@@ -13,6 +13,7 @@ namespace VehicleClassLibrary
         public string vehicleMake { get; set; }
         public int numKM { get; set; }
         public int serviceKM { get; set; }
+        public string ServiceMessage { get; set; }
 
         public string AddVehicle()
         {
@@ -21,6 +22,21 @@ namespace VehicleClassLibrary
         public override string ToString()
         {
             return vehicleID + "\t" + Description + "\t" + vehicleMake + "\t" + numKM + "\t" + serviceKM;
+        }
+        public string CalculateRemaining()
+        {
+            string result = "";
+            int remaining = 0;
+            remaining = serviceKM - numKM;
+            if (remaining <= 3000)
+            {
+                result = "Remaining Kilometers: " + remaining;
+            }
+            else if (remaining > 3000)
+            {
+                result = "No Sevice Needed! ";
+            }
+            return result;
         }
     }
 
