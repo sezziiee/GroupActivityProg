@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:ProgActivityVehicles"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
     <Grid Background="Black">
         <!--#C8A2E8-->
         <Button x:Name="btnadd" Content="Add" HorizontalAlignment="Left" Margin="195,322,0,0" VerticalAlignment="Top" Click="btnadd_Click" Height="39" Width="76" FontWeight="Bold" Background="Black" FontSize="20" Foreground="White"/>
@@ -22,5 +23,6 @@
         <Button x:Name="button1" Content="Display" HorizontalAlignment="Left" Margin="282,322,0,0" VerticalAlignment="Top" Height="39" Width="72" Background="Orange"  FontWeight="Bold" FontSize="20"/>
         <Label x:Name="label5" Content="Vehicle" HorizontalAlignment="Left" Margin="271,46,0,0" VerticalAlignment="Top" FontFamily="verdana" FontSize="32px" FontWeight="Bold" Foreground="white"/>
         <Label x:Name="label6" Content="Hub" HorizontalAlignment="Left" Margin="416,46,0,0" VerticalAlignment="Top" FontFamily="verdana" FontSize="32px" FontWeight="Bold" Foreground="Black" Background="Orange" />
+
     </Grid>
 </Window>
