@@ -27,10 +27,10 @@ namespace ProgActivityVehicles
         {
             InitializeComponent();
         }
-
+        List<Vehicle> vehicles = new List<Vehicle>();
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            List<Vehicle> vehicles = new List<Vehicle>();
+            
 
             StreamReader reader = new StreamReader("VehicleData.txt");
             Vehicle veh = new Vehicle();
@@ -53,6 +53,13 @@ namespace ProgActivityVehicles
                 count++;
             }
             
+        }
+
+        private void btnDisplay_Click(object sender, RoutedEventArgs e)
+        {
+            var DisplayVehicle = from vehicle in vehicles select vehicle;
+            dgvVehicle.ItemsSource = null;
+            dgvVehicle.ItemsSource = DisplayVehicle;
         }
     }
 }
