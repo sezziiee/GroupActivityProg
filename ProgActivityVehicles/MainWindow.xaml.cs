@@ -32,15 +32,16 @@ namespace ProgActivityVehicles
         {
             List<Vehicle> vehicles = new List<Vehicle>();
 
-           
+            StreamReader reader = new StreamReader("VehicleData.txt");
             Vehicle veh = new Vehicle();
             var service = 3000;
             int total= 0;
             string Line = null;
             string[] fields;
 
-            
-            
+            int count = 0;
+            while ((Line = reader.ReadLine()) != null)
+            {
                 fields = Line.Split('#');
                 veh.vehicleID = int.Parse(fields[0]);
                 veh.Description = fields[1];
@@ -51,7 +52,8 @@ namespace ProgActivityVehicles
 
                 
 
-              
+                count++;
+            }
 
                 for (int x = 0; x < vehicles.Count(); x++)
                 {
