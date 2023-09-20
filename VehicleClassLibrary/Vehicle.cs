@@ -24,7 +24,7 @@ namespace VehicleClassLibrary
             return vehicleID + "\t" + Description + "\t" + vehicleMake + "\t" + numKM + "\t" + serviceKM;
         }
 
-        MessageBox.Show();
+        
     }
 
     
