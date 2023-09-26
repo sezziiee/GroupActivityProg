@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace VehicleClassLibrary
 {
@@ -34,6 +35,19 @@ namespace VehicleClassLibrary
         public override string ToString()
         {
             return ID + "\t" + Description + "\t" + Make + "\t" + KM + "\t" + servicekm;
+        }
+        public void CalculateRemaining()
+        {
+            int remaining = 0;
+            remaining = serviceKM - numKM;
+            if (remaining <= 3000)
+            {
+                MessageBox.Show("Remaining Kilometers: " + remaining);
+            }
+            else if (remaining > 3000)
+            {
+                MessageBox.Show("No Sevice Needed! ");
+            }
         }
     }
 

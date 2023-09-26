@@ -30,6 +30,8 @@ namespace ProgActivityVehicles
         {
             InitializeComponent();
         }
+        List<Vehicle> vehicles = new List<Vehicle>();
+        Vehicle vehicle = new Vehicle();
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
@@ -67,9 +69,18 @@ namespace ProgActivityVehicles
                 vehicle.servicekm = int.Parse(fields[4]);
             }
 
-
-
             reader.Close();
+                count++;
+            }
+
+        }
+       
+
+        private void btnDisplay_Click(object sender, RoutedEventArgs e)
+        {
+            var DisplayVehicle = from vehicle in vehicles select vehicle;
+            dgvVehicle.ItemsSource = null;
+            dgvVehicle.ItemsSource = DisplayVehicle;
         }
     }
 }

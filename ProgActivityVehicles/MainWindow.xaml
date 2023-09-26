@@ -6,19 +6,27 @@
         xmlns:local="clr-namespace:ProgActivityVehicles"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="52,217,0,0" VerticalAlignment="Top" Click="btnAdd_Click"  Height="26" Width="76"/>
-        <TextBox x:Name="txtID" HorizontalAlignment="Left" Margin="117,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtDesc" HorizontalAlignment="Left" Margin="117,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtMake" HorizontalAlignment="Left" Margin="117,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtKM" HorizontalAlignment="Left" Margin="117,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtServiceKM" HorizontalAlignment="Left" Margin="117,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="label" Content="ID" HorizontalAlignment="Left" Margin="41,89,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label1" Content="Description" HorizontalAlignment="Left" Margin="41,112,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label2" Content="Make" HorizontalAlignment="Left" Margin="41,139,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label3" Content="Kilometers" HorizontalAlignment="Left" Margin="41,162,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label4" Content="Service KM" HorizontalAlignment="Left" Margin="41,181,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnDisplay" Content="Display" HorizontalAlignment="Left" Margin="177,217,0,0" VerticalAlignment="Top" Height="26" Width="72" Click="btnDisplay_Click"/>
+
+
+    <Grid Background="Black">
+        <!--#C8A2E8-->
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="195,322,0,0" VerticalAlignment="Top" Click="btnadd_Click" Height="39" Width="76" FontWeight="Bold" Background="Black" FontSize="20" Foreground="White"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Margin="195,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159" Height="28"/>
+        <TextBox x:Name="txtDescr" HorizontalAlignment="Left" Margin="195,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159" Height="24"/>
+        <TextBox x:Name="txtMake" HorizontalAlignment="Left" Margin="195,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159" Height="28"/>
+        <TextBox x:Name="txtKM" HorizontalAlignment="Left" Margin="195,247,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159" Height="28"/>
+        <TextBox x:Name="txtServiceKM" HorizontalAlignment="Left" Margin="195,284,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159" Height="28"/>
+        <Label x:Name="label" Content="ID" HorizontalAlignment="Left" Margin="45,117,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Label x:Name="label1" Content="Description" HorizontalAlignment="Left" Margin="46,159,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Label x:Name="label2" Content="Make" HorizontalAlignment="Left" Margin="46,201,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Label x:Name="label3" Content="Kilometers" HorizontalAlignment="Left" Margin="48,243,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Label x:Name="label4" Content="Service KM" HorizontalAlignment="Left" Margin="49,280,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Button x:Name="button1" Content="Display" HorizontalAlignment="Left" Margin="282,322,0,0" VerticalAlignment="Top" Height="39" Width="72" Background="Orange"  FontWeight="Bold" FontSize="20"/>
+        <Label x:Name="label5" Content="Vehicle" HorizontalAlignment="Left" Margin="271,46,0,0" VerticalAlignment="Top" FontFamily="verdana" FontSize="32px" FontWeight="Bold" Foreground="white"/>
+        <Label x:Name="label6" Content="Hub" HorizontalAlignment="Left" Margin="416,46,0,0" VerticalAlignment="Top" FontFamily="verdana" FontSize="32px" FontWeight="Bold" Foreground="Black" Background="Orange" />
+        <DataGrid x:Name="dgvVehicle" Margin="400,117,33,117" Background="black"/>
+
+
 
     </Grid>
 </Window>
