@@ -23,6 +23,7 @@
         <Button x:Name="button1" Content="Display" HorizontalAlignment="Left" Margin="282,322,0,0" VerticalAlignment="Top" Height="39" Width="72" Background="Orange"  FontWeight="Bold" FontSize="20"/>
         <Label x:Name="label5" Content="Vehicle" HorizontalAlignment="Left" Margin="271,46,0,0" VerticalAlignment="Top" FontFamily="verdana" FontSize="32px" FontWeight="Bold" Foreground="white"/>
         <Label x:Name="label6" Content="Hub" HorizontalAlignment="Left" Margin="416,46,0,0" VerticalAlignment="Top" FontFamily="verdana" FontSize="32px" FontWeight="Bold" Foreground="Black" Background="Orange" />
+        <DataGrid x:Name="dgvVehicle" Margin="400,117,33,117" Background="black"/>
 
 
     </Grid>
