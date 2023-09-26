@@ -27,16 +27,12 @@ namespace ProgActivityVehicles
         {
             InitializeComponent();
         }
-
-
-        private void btnAdd_Click(object sender, RoutedEventArgs e)
-
         List<Vehicle> vehicles = new List<Vehicle>();
         Vehicle vehicle = new Vehicle();
-        private void button_Click(object sender, RoutedEventArgs e)
 
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            
+
 
             StreamReader reader = new StreamReader("VehicleData.txt");
             Vehicle veh = new Vehicle();
@@ -58,7 +54,9 @@ namespace ProgActivityVehicles
 
                 count++;
             }
+
         }
+       
 
         private void btnDisplay_Click(object sender, RoutedEventArgs e)
         {
