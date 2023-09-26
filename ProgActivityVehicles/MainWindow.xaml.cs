@@ -31,30 +31,13 @@ namespace ProgActivityVehicles
             InitializeComponent();
         }
         List<Vehicle> vehicles = new List<Vehicle>();
-        Vehicle vehicle = new Vehicle();
 
-        private void btnAdd_Click(object sender, RoutedEventArgs e)
-        {
-            List<Vehicle> vehicles = new List<Vehicle>();
-            Vehicle vehicle = new Vehicle(txtID.Text, txtDesc.Text, txtMake.Text, int.Parse(txtKM.Text), int.Parse(txtServiceKM.Text));
-
-            Directory.CreateDirectory(System.IO.Path.Combine(Path, vehicle.Make));
-            StreamWriter writer = new StreamWriter(System.IO.Path.Combine(Path, vehicle.Make));
-            
-
-            writer.WriteLine(vehicle.AddVehicle());
-
-            vehicles.Add(vehicle);
-
-            writer.Close();
-        }
-
-        private void btnDisplay_Click(object sender, RoutedEventArgs e)
+        private void btnDisplay_Click_1(object sender, RoutedEventArgs e)
         {
             StreamReader reader = new StreamReader(Path);
             string folder = System.IO.Path.GetFileName(System.IO.Path.GetDirectoryName(Path));
             Vehicle vehicle = new Vehicle();
-
+            int count = 0;
             string Line = null;
             string[] fields;
 
@@ -69,18 +52,28 @@ namespace ProgActivityVehicles
                 vehicle.servicekm = int.Parse(fields[4]);
             }
 
-            reader.Close();
-                count++;
-            }
-
-        }
-       
-
-        private void btnDisplay_Click(object sender, RoutedEventArgs e)
-        {
-            var DisplayVehicle = from vehicle in vehicles select vehicle;
+            var DisplayVehicle = from vehicle1 in vehicles select vehicle1;
             dgvVehicle.ItemsSource = null;
             dgvVehicle.ItemsSource = DisplayVehicle;
+
+            reader.Close();
+            count++;
+        }
+
+        private void btnAdd_Click_1(object sender, RoutedEventArgs e)
+        {
+            Vehicle vehicle = new Vehicle(txtID.Text, txtDescr.Text, txtMake.Text, int.Parse(txtKM.Text), int.Parse(txtServiceKM.Text));
+
+            Directory.CreateDirectory(System.IO.Path.Combine(Path, vehicle.Make));
+            StreamWriter writer = new StreamWriter(System.IO.Path.Combine(Path, vehicle.Make));
+
+
+            writer.WriteLine(vehicle.AddVehicle());
+
+            vehicles.Add(vehicle);
+
+            writer.Close();
         }
     }
-}
+    }
+
