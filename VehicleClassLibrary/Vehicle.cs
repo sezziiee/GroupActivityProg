@@ -9,19 +9,32 @@ namespace VehicleClassLibrary
 {
     public class Vehicle
     {
-        public int vehicleID {  get; set; }
+        public string ID {  get; set; }
         public string Description { get; set; }
-        public string vehicleMake { get; set; }
-        public int numKM { get; set; }
-        public int serviceKM { get; set; }
+        public string Make { get; set; }
+        public int KM { get; set; }
+        public int servicekm { get; set; }
+
+        public Vehicle(string ID, string Desc, string Make, int km, int servicekm)
+        {
+            this.ID = ID;
+            this.Description = Desc;
+            this.Make = Make;
+            this.KM = km;
+            this.servicekm = servicekm;
+        }
+
+        public Vehicle()
+        {
+        }
 
         public string AddVehicle()
         {
-            return vehicleID + "#" + Description + "#" + vehicleMake + "#" + numKM +"#" + serviceKM;
+            return ID + "#" + Description + "#" + Make + "#" + KM +"#" + servicekm;
     }
         public override string ToString()
         {
-            return vehicleID + "\t" + Description + "\t" + vehicleMake + "\t" + numKM + "\t" + serviceKM;
+            return ID + "\t" + Description + "\t" + Make + "\t" + KM + "\t" + servicekm;
         }
         public void CalculateRemaining()
         {
