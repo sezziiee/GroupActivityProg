@@ -9,7 +9,7 @@
 
     <Grid Background="Black">
         <!--#C8A2E8-->
-        <Button x:Name="btnadd" Content="Add" HorizontalAlignment="Left" Margin="195,322,0,0" VerticalAlignment="Top" Click="btnadd_Click" Height="39" Width="76" FontWeight="Bold" Background="Black" FontSize="20" Foreground="White"/>
+        <Button x:Name="btnadd" Content="Add" Click="btnadd_Click" HorizontalAlignment="Left" Margin="195,322,0,0" VerticalAlignment="Top" Height="39" Width="76" FontWeight="Bold" Background="Black" FontSize="20" Foreground="White"/>
         <TextBox x:Name="txtID" HorizontalAlignment="Left" Margin="195,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159" Height="28"/>
         <TextBox x:Name="txtDescr" HorizontalAlignment="Left" Margin="195,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159" Height="24"/>
         <TextBox x:Name="txtMake" HorizontalAlignment="Left" Margin="195,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159" Height="28"/>
@@ -20,7 +20,7 @@
         <Label x:Name="label2" Content="Make" HorizontalAlignment="Left" Margin="46,201,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
         <Label x:Name="label3" Content="Kilometers" HorizontalAlignment="Left" Margin="48,243,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
         <Label x:Name="label4" Content="Service KM" HorizontalAlignment="Left" Margin="49,280,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
-        <Button x:Name="button1" Content="Display" HorizontalAlignment="Left" Margin="282,322,0,0" VerticalAlignment="Top" Height="39" Width="72" Background="Orange"  FontWeight="Bold" FontSize="20"/>
+        <Button x:Name="btnDisplay" Content="Display" Click="btnDisplay_Click_1" HorizontalAlignment="Left" Margin="282,322,0,0" VerticalAlignment="Top" Height="39" Width="72" Background="Orange"  FontWeight="Bold" FontSize="20"/>
         <Label x:Name="label5" Content="Vehicle" HorizontalAlignment="Left" Margin="271,46,0,0" VerticalAlignment="Top" FontFamily="verdana" FontSize="32px" FontWeight="Bold" Foreground="white"/>
         <Label x:Name="label6" Content="Hub" HorizontalAlignment="Left" Margin="416,46,0,0" VerticalAlignment="Top" FontFamily="verdana" FontSize="32px" FontWeight="Bold" Foreground="Black" Background="Orange" />
 
