@@ -39,7 +39,7 @@ namespace VehicleClassLibrary
         public void CalculateRemaining()
         {
             int remaining = 0;
-            remaining = serviceKM - numKM;
+            remaining = servicekm - KM;
             if (remaining <= 3000)
             {
                 MessageBox.Show("Remaining Kilometers: " + remaining);
